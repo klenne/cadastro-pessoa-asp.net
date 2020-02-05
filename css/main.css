@@ -1,0 +1,204 @@
+﻿
+
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.btn:hover {
+    filter: contrast(300%);
+}
+.btn-preto:hover {
+    filter: opacity(30%);
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    margin: 1%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-selecionar {
+    background-image: url(editar.png);
+}
+
+.btn-excluir {
+    background-image: url(deletar.png);
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    box-shadow: 0px 0px 1px rgba(0,0,0,1);
+    border: solid 1px white;
+    border-radius: 5%;
+}
+
+.modal-inside {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 5%;
+}
+
+
+.modal-itens {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10% 0%;
+}
+
+.titulo-modal {
+    margin-bottom: 2rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.btn-modal {
+    width: 45%;
+    height: 30px;
+}
+
+    .btn-modal:hover {
+        border: solid 1px gray;
+        background-color: rgba(222, 222, 222, 0.70);
+    }
+
+#lbl_id {
+    margin-right: 0.7rem;
+    font-weight: bold;
+    color: blue;
+}
+
+
+
+.grid {
+    border: solid 1px black;
+}
+
+#busca {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#txt_busca {
+    height: 20px;
+    margin-left: 0.5em;
+    width: 100%;
+}
+
+#btn_buscar {
+    height: 30px;
+    width: 50px;
+    margin-left: 0.7em;
+    background-image: url(buscar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#chks {
+    margin-bottom: 1rem;
+    display:flex;
+    justify-content:center;
+    
+}
+
+
+
+.alert {
+    position: absolute;
+    padding-top: 2%;
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.alert-empty {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.filler {
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+}
+
+.btn-salvar {
+    font-weight: bold;
+    color: limegreen;
+    background-color: white;
+    border: none;
+}
+
+.btn-fechar {
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    border: none;
+}
+
+.btn-novo {
+    background-image: url(adicionar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 50px;
+    margin-left: 0.3rem;
+}
+
+.pnlgrid {
+    font-weight: bold;
+}
+
+
+#clock {
+    font-weight: bold;
+    color: #6699ff;
+   right:1%;
+   top:0.5%;
+    position:absolute;
+    
+}
+
+h1 {
+ text-align:center;
+    color: #6699ff;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .filler {
+        width: 20rem;
+    }
+    #clock{
+        font-size:80%;
+    }
+}
